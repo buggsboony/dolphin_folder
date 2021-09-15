@@ -20,17 +20,13 @@ then
     exit
 fi
 
-#Replacer Dolphin if not already exists
+#Remplacer Dolphin if not already exists
 dolbak=/usr/bin/dolphin_original
-if [ -f "$dolbak" ];
-then
-    echo "File '$dolbak' already exists ";
-    echo "Mission aborted."
-else
+ 
     echo "Backing up dolphin executable to '$dolbak'"
     sudo mv /usr/bin/dolphin $dolbak
      
     #echo "lien symbolique vers usr bin"
     sudo ln -s "$PWD/$what$extension" /usr/bin/$what
     echo "done."
-fi
+ 

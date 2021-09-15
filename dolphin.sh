@@ -1,5 +1,7 @@
 #!/bin/bash
-#echo "'$@'"> ~/dolphin_args.txt
+# echo "'$@'"> ~/dolphin_args.txt
+# kate ~/dolphin_args.txt
+# exit
 
 #Argument count is 1
 if [[ "$#" == "1" ]]; then
